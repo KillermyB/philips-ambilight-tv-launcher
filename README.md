@@ -1,59 +1,63 @@
-# Atelier TV
+# Ambilight Art Launcher
 
-Un accueil Android TV qui laisse la place aux œuvres.
+An art-first Android TV launcher for **Philips Ambilight TVs**.
 
-Deux thèmes, **Atelier** et **CleanFrame**, 100 tableaux, une veille artistique, des citations, la météo et un mode musique Spotify. Interface en français, pensée pour la télécommande.
+100 curated paintings, two home styles, an art screensaver, quotes, weather and Spotify controls with synchronized lyrics when available. French interface, designed for the remote.
 
-### Atelier
+### Classic home
 
-![Accueil Atelier](docs/screenshots/atelier.jpg)
+![Classic Android TV home](docs/screenshots/classic.jpg)
 
-### CleanFrame
+### CleanFrame home
 
-![Accueil CleanFrame](docs/screenshots/cleanframe.jpg)
+![CleanFrame home on Philips Ambilight](docs/screenshots/cleanframe.jpg)
 
 <details>
-<summary>Voir les autres écrans</summary>
+<summary>More screenshots</summary>
 
-### Liste CleanFrame
+### CleanFrame list
 
-![Liste CleanFrame](docs/screenshots/liste.jpg)
+![CleanFrame app list](docs/screenshots/liste.jpg)
 
-### Cartel de l’œuvre
+### Artwork details
 
-![Cartel intégré](docs/screenshots/cartel.jpg)
+![Integrated artwork details](docs/screenshots/cartel.jpg)
 
-### Galerie
+### Art gallery
 
-![Galerie de tableaux](docs/screenshots/galerie.jpg)
+![Painting gallery](docs/screenshots/galerie.jpg)
 
 ### Applications
 
-![Applications](docs/screenshots/applications.jpg)
+![TV application library](docs/screenshots/applications.jpg)
 
-### Centre de contrôle
+### Control center
 
-![Centre de contrôle](docs/screenshots/controle.jpg)
+![TV control center](docs/screenshots/controle.jpg)
 
-### Focus musique
+### Music focus with synchronized lyrics
 
-![Focus musique Spotify](docs/screenshots/musique.jpg)
+![Music focus with synchronized lyrics](docs/screenshots/musique.jpg)
 
-### Veille
+Actual on-TV capture from v0.13.0, showing synced lyrics for RER D by Dajak.
 
-![Veille artistique](docs/screenshots/veille.jpg)
+### Art screensaver
+
+![Philips Ambilight art screensaver](docs/screenshots/veille.jpg)
 
 </details>
 
-### Compiler
+### Build
 
-Version **0.17.3** · Java natif, sans Gradle. Préparation prévue pour macOS Apple Silicon :
+App version **0.17.3** · Native Java, no Gradle. Toolchain setup targets macOS Apple Silicon:
 
 ```sh
 python3 scripts/setup_toolchain.py
 ./build.sh
 ```
 
-APK généré dans `dist/`. Testé sur Philips 65PUS8007/12, Android TV 14. Spotify nécessite l’accès aux notifications ; AirPlay dépend d’un récepteur installé sur la TV.
+The APK is generated in `dist/`. Tested on Philips 65PUS8007/12 with Android TV 14. Spotify requires notification access; lyrics depend on LRCLIB availability. AirPlay requires an installed receiver app.
 
-Inspiré de [CleanFrame](https://github.com/nthnclrk/CleanFrame). [Crédits et licences](THIRD_PARTY_NOTICES.md) · sources des œuvres dans [le catalogue](app/src/main/assets/art/catalog.json).
+Inspired by [CleanFrame](https://github.com/nthnclrk/CleanFrame). [Credits and licenses](THIRD_PARTY_NOTICES.md) · artwork sources in the [catalog](app/src/main/assets/art/catalog.json).
+
+Independent project; not affiliated with Philips or TP Vision.
