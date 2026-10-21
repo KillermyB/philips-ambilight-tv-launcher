@@ -1,0 +1,12 @@
+.local/
+dist/
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.env.*
+*.p12
+*.jks
+*.keystore
+/PASSATION.md
+/package-lock.json
